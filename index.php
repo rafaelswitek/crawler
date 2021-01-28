@@ -15,8 +15,7 @@ $array = $crawler->filter("#content table")->filter("tr")->nextAll()->each(funct
         "valor_mensal" => $tr->children()->eq(1)->text(),
         "valor_diario" => $tr->children()->eq(2)->text(),
         "valor_hora" => $tr->children()->eq(3)->text(),
-        "norma_legal" => $tr->children()->eq(4)->text(),
-        "dou" => $tr->children()->eq(5)->text()
+        "norma_legal" => $tr->children()->eq(4)->text()
     ]);
 });
 
